@@ -16,39 +16,42 @@
   <body>
     <header class="header">
       <div class="header__contenedor">
-        <div class="header__barra">
+        <div class="header__flex">
           <div class="header__logo">
-            <picture>
-              <img
-                class="header__img"
-                loading="lazy"
-                src="assets/tooth-dentist-svgrepo-com.svg"
-                width="500"
-                height="500"
-                alt="Logo Dental Dentist Diente"
-              />
-            </picture>
+            <img
+              class="header__img"
+              src="assets/tooth-dentist-svgrepo-com.svg"
+              width="50"
+              height="50"
+              alt="Logo de Dental Dentist diente"
+            />
           </div>
-          <div class="header__titulo">
-            <h1 class="header__heading">
-              Dental <span class="header__span">Clinic</span>
+          <div class="header__heading">
+            <h1 class="header__titulo">
+              Dental <span class="header__span">Dentist</span>
             </h1>
           </div>
-          <div class="nav">
-            <input type="checkbox" class="nav__canvas" />
-            <label class="nav__label"></label>
-            <nav class="nav__nav">
-              <div class="nav__menu">
-                <a class="nav__link" href="#">Nosotros</a>
-                <a class="nav__link" href="#">Servicios</a>
-                <a class="nav__link" href="#">Pacientes</a>
-                <a class="nav__link" href="#">Cita</a>
-                <a class="nav__link" href="#">Contacto</a>
-              </div>
-            </nav>
+          <div class="boton">
+            <div class="boton__hamburger">
+              <button class="boton__btn">
+                <span class="boton__top"></span>
+                <span class="boton__middle"></span>
+                <span class="boton__bottom"></span>
+              </button>
+            </div>
           </div>
+          <nav class="header__menu">
+            <div class="header__links">
+              <a href="#" class="header__link">Nosotros</a>
+              <a href="#" class="header__link">Servicios</a>
+              <a href="#" class="header__link">Pacientes</a>
+              <a href="#" class="header__link">Contacto</a>
+            </div>
+          </nav>
         </div>
       </div>
     </header>
+
+    <script src="app.js"></script>
   </body>
 </html>

@@ -76,106 +76,166 @@ img {
   padding: 2rem 0;
 }
 
-.header__barra {
+.header__flex {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header__img {
-  width: 3.8rem;
-  height: 3.8rem;
+.header__heading {
+  margin: 0;
 }
 
 .header__span {
   color: var(--primario);
 }
 
-.nav {
-  width: 3.8rem;
-  height: 3.8rem;
+.header__img {
+  width: 4.5rem;
+  height: 4.5rem;
 }
 
-.nav__canvas {
-  z-index: 999;
-  width: 3rem;
-  height: 3rem;
+.boton__btn {
+  background: none;
+  border: 0;
   cursor: pointer;
-  opacity: 0;
+  padding: 0;
+  width: 5rem;
+  height: 5rem;
 }
 
-.nav__label {
-  z-index: 998;
-  width: 3rem;
-  height: 0.6rem;
-  background-color: var(--secundario);
-  border-radius: 0.3rem;
-  transform: rotate(0deg) translate(0, -1.2rem);
-  transform-origin: top left;
-  transition: transform 0.5s ease, background-color 0.5s ease;
-}
-
-.nav__label::before,
-.nav__label::after {
-  content: "";
+.boton__top,
+.boton__middle,
+.boton__bottom {
+  border-radius: 0.5rem;
+  background: var(--secundario);
   display: block;
+  width: 60%;
+  margin: 0.5rem auto;
+  height: 0.2rem;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.boton__btn--open .boton__top {
+  animation-name: boton__top--animation;
+}
+
+.boton__btn--open .boton__middle {
+  animation-name: boton__middle--animation;
+}
+
+.boton__btn--open .boton__bottom {
+  animation-name: boton__bottom--animation;
+}
+
+.boton__top {
+  animation-name: boton__top--close;
+}
+
+.boton__middle {
+  animation-name: boton__middle--close;
+}
+
+.boton__bottom {
+  animation-name: boton__bottom--close;
+}
+
+@keyframes boton__top--animation {
+  50%,
+  100% {
+    margin: 0 auto;
+    transform: translateY(0.2rem) rotate(-45deg);
+  }
+}
+
+@keyframes boton__bottom--animation {
+  50%,
+  100% {
+    margin: 0 auto;
+    transform: translateY(-0.2rem) rotate(45deg);
+  }
+}
+
+@keyframes boton__middle--animation {
+  20%,
+  100% {
+    margin: 0 auto;
+    width: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes boton__top--close {
+  0% {
+    margin: 0 auto;
+    transform: translateY(0.2rem) rotate(-45deg);
+  }
+
+  50%,
+  100% {
+    margin: 0.5rem auto;
+    transform: translateY(0rem) rotate(0deg);
+  }
+}
+
+@keyframes boton__middle--close {
+  0% {
+    margin: 0 auto;
+    width: 0;
+    opacity: 0;
+  }
+  20%,
+  100% {
+    margin: 0 auto;
+    width: 60%;
+    opacity: 1;
+  }
+}
+
+@keyframes boton__bottom--close {
+  0% {
+    margin: 0 auto;
+    transform: translateY(-0.2rem) rotate(45deg);
+  }
+
+  50%,
+  100% {
+    margin: 0.5rem auto;
+    transform: translateY(0rem) rotate(0deg);
+  }
+}
+
+.header__menu {
   width: 100%;
-  height: 0.6rem;
-  background-color: var(--secundario);
-  border-radius: 0.3rem;
-  transition: transform 0.5s ease;
-}
+  /* display: none; */
+  height: 0;
+  pointer-events: none;
+  overflow: hidden;
+  transition: all 0.5s ease;
 
-.nav__label::before {
-  transform: rotate(0deg) translate(0, -0.9rem);
-}
-
-.nav__label::after {
-  transform: rotate(0deg) translate(0, 0.3rem);
-}
-
-.nav__canvas:checked + .nav__label::before {
-  transform: rotate(45deg) translate(0, 0);
-}
-
-.nav__canvas:checked + .nav__label::after {
-  transform: rotate(-45deg) translate(0.4rem, -0.5rem);
-}
-
-.nav__nav {
-  z-index: 997;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #0008;
-  transition: transform 0.5s ease-in-out;
-  transform: translate(0, 100%);
-}
-
-.nav__menu {
-  width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
-.nav__link {
-  border-bottom: thin solid #d00;
-  padding: 2rem;
-  font-size: 1.5rem;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  transition: background-color 0.3s ease;
+.header__menu--activo {
+  /* display: block; */
+  height: 40vh;
+  pointer-events: auto;
 }
 
-.nav__link:first-child {
-  border-top: thin solid #d00;
+.header__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
 }
 
-.nav__link:hover {
-  background-color: #d005;
-}
-.nav__canvas:checked ~ .nav__nav {
-  transform: translate(0, 0);
+.header__link {
+  color: var(--secundario);
+  padding: 1.5rem;
+  font-weight: 700;
 }
