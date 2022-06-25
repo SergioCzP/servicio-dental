@@ -40,14 +40,39 @@
               </button>
             </div>
           </div>
-          <nav class="header__menu">
-            <div class="header__links">
-              <a href="#" class="header__link">Nosotros</a>
-              <a href="#" class="header__link">Servicios</a>
-              <a href="#" class="header__link">Pacientes</a>
-              <a href="#" class="header__link">Contacto</a>
+          <div class="header__presentacion">
+            <nav class="header__menu">
+              <div class="header__links">
+                <a href="#" class="header__link">Nosotros</a>
+                <a href="#" class="header__link">Servicios</a>
+                <a href="#" class="header__link">Pacientes</a>
+                <a href="#" class="header__link">Contacto</a>
+              </div>
+            </nav>
+            <div class="header__cover">
+              <picture class="header__fondos">
+                <source
+                  srcset="assets/dentista-hero-image.avif"
+                  type="image/avif"
+                />
+                <source
+                  srcset="assets/dentista-hero-image.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="header__fondo"
+                  loading="lazy"
+                  src="assets/dentista-hero-image.jpg"
+                  width="500"
+                  height="300"
+                  alt=""
+                />
+              </picture>
+              <h2 class="header__eslogan">
+                Cada diente es tan único y especial como cada paciente
+              </h2>
             </div>
-          </nav>
+          </div>
         </div>
       </div>
     </header>
