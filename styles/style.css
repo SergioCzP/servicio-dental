@@ -292,3 +292,30 @@ img {
   );
   color: var(--blanco);
 }
+
+.nosotros__heading {
+  margin: 0;
+}
+
+.nosotros__titulo {
+  margin-bottom: 0;
+}
+
+.nosotros__flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.nosotros__texto {
+  padding: 2rem;
+}
+
+.nosotros__parrafo {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.nosotros__fondo {
+  object-fit: contain;
+  height: 100%;
+}
