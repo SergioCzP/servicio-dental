@@ -352,15 +352,58 @@ img {
 }
 
 .cita {
-  margin-top: 3rem;
+  margin: 3rem 0;
 }
 
-.cita__flex {
+.cita__contenedor {
+  padding: 2rem 0 4rem;
+  background-color: var(--sombra);
+}
+
+.cita__heading {
+  font-size: 3.6rem;
+  padding: 0 2rem;
+  font-weight: 900;
+  color: transparent;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 29, 48, 1) 0%,
+    rgba(0, 105, 175, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.cita__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+  padding: 1rem;
+}
+
+.cita__icono {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.cita__titulo {
+.cita__seleccion {
   text-align: center;
-  font-size: 3rem;
+}
+
+.cita__texto {
+  padding: 2rem 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+.cita__boton {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1.5rem;
+  width: 20rem;
+  border-radius: 1rem;
+  background-color: var(--primario);
+  color: var(--blanco);
 }
