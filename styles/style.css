@@ -1,6 +1,6 @@
 :root {
   --primario: #4ea5dc;
-  --secundario: #012c3d;
+  --secundario: #002044;
   --blanco: #f7f8f3;
   --rojo: #f8444f;
   --negro: #020612;
@@ -294,6 +294,12 @@ img {
   color: var(--blanco);
 }
 
+/* Nosotros */
+.nosotros__contenedor {
+  margin: 0;
+  width: 100%;
+}
+
 .nosotros__heading {
   margin: 0;
 }
@@ -352,7 +358,7 @@ img {
 }
 
 .cita {
-  margin: 3rem 0;
+  margin: 5rem 0;
 }
 
 .cita__contenedor {
@@ -406,4 +412,118 @@ img {
   border-radius: 1rem;
   background-color: var(--primario);
   color: var(--blanco);
+}
+
+/* Pacientes */
+.pacientes__contenedor {
+  margin: 0;
+  width: 100%;
+}
+
+.pacientes__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 3rem;
+}
+
+.pacientes__paciente {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(11, 24, 32);
+  background: linear-gradient(
+    0deg,
+    rgba(11, 24, 32, 1) 0%,
+    rgba(9, 111, 175, 1) 100%
+  );
+  padding: 0 2rem;
+}
+
+.pacientes__nombre {
+  padding: 2rem 0;
+  text-align: center;
+  color: var(--blanco);
+}
+
+.pacientes__foto {
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.pacientes__paciente:last-of-type .pacientes__foto {
+  object-position: center top;
+}
+
+.paciente__cita {
+  text-align: center;
+  color: var(--blanco);
+  padding: 2rem 0;
+}
+
+/* Contacto */
+.contacto__heading {
+  margin: 3rem 0;
+}
+
+.contacto__contenido {
+  padding: 2rem;
+  border: solid 0.1rem var(--negro);
+}
+
+.contacto__flex {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: var(--sombra);
+  border-radius: 1rem;
+}
+
+.contacto__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contacto__texto {
+  width: 20rem;
+  text-align: center;
+}
+
+.contacto__icono {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* footer */
+.footer {
+  margin-top: 5rem;
+  padding: 2rem 0 0;
+  background-color: var(--secundario);
+  color: var(--blanco);
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.footer__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__heading {
+  margin-bottom: 2rem;
+  font-weight: 900;
+}
+
+.footer__link {
+  color: var(--blanco);
+}
+
+.footer__derechos {
+  text-align: center;
+  padding: 2rem;
 }
