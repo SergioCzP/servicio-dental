@@ -320,11 +320,26 @@ img {
   flex-direction: column;
   background-color: var(--sombra);
 }
+
+@media (min-width: 768px) {
+  .nosotros__flex {
+    flex-direction: row;
+  }
+}
+
 .nosotros__titulo {
   margin-bottom: 3rem;
 }
 .nosotros__texto {
   padding: 2rem;
+}
+
+@media (min-width: 768px) {
+  .nosotros__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .nosotros__parrafo {
@@ -338,6 +353,8 @@ img {
   width: 100%;
 }
 
+/* Servicios */
+
 .servicios__titulo {
   margin-bottom: 0;
   margin-top: 3rem;
@@ -347,6 +364,13 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .servicios__grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+  }
 }
 
 .servicios__servicio {
@@ -431,14 +455,27 @@ img {
 
 /* Pacientes */
 .pacientes__contenedor {
-  margin: 0;
   width: 100%;
+}
+@media (min-width: 768px) {
+  .pacientes__contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+  }
 }
 
 .pacientes__grid {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .pacientes__grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+  }
 }
 
 .pacientes__paciente {
@@ -538,6 +575,13 @@ img {
   grid-template-columns: 1fr;
 }
 
+@media (min-width: 768px) {
+  .footer__grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 15rem 1fr 10rem;
+  }
+}
+
 .footer__head {
   display: flex;
   flex-direction: column;
@@ -545,9 +589,24 @@ img {
   gap: 1rem;
 }
 
+@media (min-width: 768px) {
+  .footer__heading {
+    grid-row: 1 / 2;
+  }
+}
+
 .footer__heading {
   margin-bottom: 2rem;
   font-weight: 900;
+}
+
+@media (min-width: 768px) {
+  .footer__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .footer__link {
@@ -557,4 +616,11 @@ img {
 .footer__derechos {
   text-align: center;
   padding: 2rem;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .footer__derechos {
+    grid-column: 1 / 4;
+  }
 }
