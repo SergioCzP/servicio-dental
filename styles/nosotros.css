@@ -1,0 +1,14 @@
+/* Nosotros */
+.nosotros__heading {
+  margin-bottom: 2rem;
+}
+.nosotros__texto {
+  text-align: center;
+  margin: 0 0 2rem;
+}
+
+.nosotros__flex {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
