@@ -89,6 +89,7 @@ img {
 }
 
 .header__contenedor {
+  max-width: 100%;
   width: 100%;
 }
 
@@ -336,7 +337,7 @@ img {
 
 /* Nosotros */
 .nosotros__contenedor {
-  margin: 0;
+  margin: 0 auto;
   width: 100%;
 }
 
