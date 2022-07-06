@@ -103,6 +103,28 @@ img {
   margin: 0;
 }
 
+.menu {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .menu {
+    display: block;
+    width: 40%;
+  }
+
+  .menu__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu__link {
+    display: inline-block;
+    padding: 1.5rem;
+    color: var(--negro);
+  }
+}
+
 .header__span {
   color: var(--primario);
 }
@@ -110,6 +132,13 @@ img {
 .header__img {
   width: 4.5rem;
   height: 4.5rem;
+}
+
+/* Boton */
+@media (min-width: 1200px) {
+  .boton {
+    display: none;
+  }
 }
 
 .boton__btn {
@@ -373,6 +402,12 @@ img {
   }
 }
 
+@media (min-width: 1200px) {
+  .servicios__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .servicios__servicio {
   border-radius: 1rem;
   background-color: var(--sombra);
@@ -465,6 +500,12 @@ img {
   }
 }
 
+@media (min-width: 1200px) {
+  .pacientes__contenedor {
+    width: 100%;
+  }
+}
+
 .pacientes__grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -475,6 +516,12 @@ img {
   .pacientes__grid {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pacientes__grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -497,6 +544,16 @@ img {
   color: var(--blanco);
 }
 
+@media (min-width: 1200px) {
+  .pacientes__nombre {
+    padding: 0;
+    height: 10rem;
+
+    display: flex;
+    align-items: center;
+  }
+}
+
 .pacientes__foto {
   object-fit: cover;
   border-radius: 100%;
@@ -512,6 +569,12 @@ img {
   color: var(--blanco);
   padding: 2rem 0;
   position: relative;
+}
+
+@media (min-width: 1200px) {
+  .paciente__cita {
+    height: 20rem;
+  }
 }
 
 .paciente__cita::before {
@@ -544,6 +607,12 @@ img {
   padding: 2rem;
   background-color: var(--sombra);
   border-radius: 1rem;
+}
+
+@media (min-width: 1200px) {
+  .contacto__flex {
+    padding: 2rem 25rem;
+  }
 }
 
 .contacto__info {
