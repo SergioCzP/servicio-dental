@@ -1,14 +1,39 @@
 /* Nosotros */
 .nosotros__heading {
-  margin-bottom: 2rem;
-}
-.nosotros__texto {
-  text-align: center;
-  margin: 0 0 2rem;
+  margin-bottom: 0;
 }
 
-.nosotros__flex {
-  padding: 2rem 0;
+.nosotros__texto {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.objetivo {
   display: flex;
   flex-direction: column;
+  gap: 3rem;
+}
+
+.objetivo__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--sombra);
+}
+
+@media (min-width: 768px) {
+  .objetivo__wrap {
+    width: 50%;
+  }
+}
+
+.objetivo__texto {
+  padding: 0 2rem;
+}
+
+@media (min-width: 768px) {
+  .objetivo {
+    flex-direction: row;
+  }
 }
