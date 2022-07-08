@@ -1,10 +1,282 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Servicios</title>
+    <meta name="keywords" content="Dentista, Odontólogos, Ortodoncia, Cita" />
+    <meta
+      name="description"
+      content="Realiza cita para asistir a nuestro consultorio dental desde nuestra página web"
+    />
+    <meta name="author" content="Sergio Cruz" />
+    <link rel="icon" href="../assets/tooth-dentist-svgrepo-com.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/base.css" />
+    <link rel="stylesheet" href="../styles/cita.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__contenedor">
+        <div class="header__flex">
+          <div class="header__logo">
+            <a href="index.html" class="header__inicio">
+              <img
+                class="header__img"
+                src="../assets/tooth-dentist-svgrepo-com.svg"
+                width="50"
+                height="50"
+                alt="Logo de Dental Dentist diente"
+              />
+            </a>
+          </div>
+          <div class="header__heading">
+            <h1 class="header__titulo">
+              Dental <span class="header__span">Dentist</span>
+            </h1>
+          </div>
+          <div class="menu">
+            <nav class="menu__flex">
+              <a href="#" class="menu__link">Inicio</a>
+              <a href="#" class="menu__link">Nosotros</a>
+              <a href="#" class="menu__link">Pacientes</a>
+              <a href="#" class="menu__link">Contacto</a>
+            </nav>
+          </div>
+          <div class="boton">
+            <div class="boton__hamburger">
+              <button class="boton__btn">
+                <span class="boton__top"></span>
+                <span class="boton__middle"></span>
+                <span class="boton__bottom"></span>
+              </button>
+            </div>
+          </div>
+          <div class="header__presentacion">
+            <nav class="header__menu">
+              <div class="header__links">
+                <a href="#" class="header__link">Inicio</a>
+                <a href="#" class="header__link">Nosotros</a>
+                <a href="#" class="header__link">Pacientes</a>
+                <a href="#" class="header__link">Contacto</a>
+              </div>
+            </nav>
+            <div class="header__cover">
+              <picture class="header__fondos">
+                <source srcset="../assets/servicios.avif" type="image/avif" />
+                <source srcset="../assets/servicios.webp" type="image/webp" />
+                <img
+                  class="header__fondo"
+                  loading="lazy"
+                  src="../assets/servicios.jpg"
+                  width="500"
+                  height="300"
+                  alt=""
+                />
+              </picture>
+              <h2 class="header__eslogan">Realizar cita</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="form">
+      <div class="form__contenedor">
+        <h2 class="form__heading">Realiza tu cita</h2>
+        <div class="form__flex">
+          <form action="" class="formulario">
+            <label class="formulario__label" for="nombre"
+              >Nombre Completo</label
+            >
+            <input
+              type="text"
+              id="nombre"
+              class="formulario__texto"
+              autocomplete="off"
+              placeholder="Ingrese su nombre"
+              required
+            />
+
+            <label class="formulario__label" for="telefono">Teléfono</label>
+            <input
+              type="tel"
+              id="telefono"
+              class="formulario__texto"
+              autocomplete="off"
+              placeholder="Ingrese su teléfono"
+              required
+            />
+
+            <label class="formulario__label" for="email"
+              >Correo eletrónico</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="formulario__texto"
+              autocomplete="off"
+              placeholder="Ingrese su correro electrónico"
+              required
+            />
+
+            <label class="formulario__label" for="dia">Día de la cita</label>
+            <input
+              type="date"
+              id="dia"
+              class="formulario__dia"
+              autocomplete="off"
+              required
+            />
+
+            <label class="formulario__label" for="hora">Hora de la cita</label>
+            <input
+              type="time"
+              id="hora"
+              class="formulario__hora"
+              autocomplete="off"
+              required
+            />
+
+            <button class="formulario__btn">Confirmar</button>
+          </form>
+          <div class="form__informacion">
+            <h3 class="form__resumen">Días y Horarios</h3>
+
+            <div class="form__wrap">
+              <div class="form__conjunto">
+                <img
+                  loading="lazy"
+                  src="../assets/reloj-de-pared.png"
+                  alt="Reloj de pared"
+                  width="15"
+                  height="15"
+                />
+                <p class="form__dia">Lunes</p>
+                <p class="form__hora">7:00 - 21:00</p>
+              </div>
+
+              <div class="form__conjunto">
+                <img
+                  loading="lazy"
+                  src="../assets/reloj-de-pared.png"
+                  alt="Reloj de pared"
+                  width="15"
+                  height="15"
+                />
+                <p class="form__dia">Martes</p>
+                <p class="form__hora">7:00 - 21:00</p>
+              </div>
+
+              <div class="form__conjunto">
+                <img
+                  loading="lazy"
+                  src="../assets/reloj-de-pared.png"
+                  alt="Reloj de pared"
+                  width="15"
+                  height="15"
+                />
+                <p class="form__dia">Miércoles</p>
+                <p class="form__hora">7:00 - 21:00</p>
+              </div>
+
+              <div class="form__conjunto">
+                <img
+                  loading="lazy"
+                  src="../assets/reloj-de-pared.png"
+                  alt="Reloj de pared"
+                  width="15"
+                  height="15"
+                />
+                <p class="form__dia">Jueves</p>
+                <p class="form__hora">7:00 - 21:00</p>
+              </div>
+
+              <div class="form__conjunto">
+                <img
+                  loading="lazy"
+                  src="../assets/reloj-de-pared.png"
+                  alt="Reloj de pared"
+                  width="15"
+                  height="15"
+                />
+                <p class="form__dia">Viernes</p>
+                <p class="form__hora">7:00 - 21:00</p>
+              </div>
+
+              <div class="form__conjunto">
+                <img
+                  loading="lazy"
+                  src="../assets/reloj-de-pared.png"
+                  alt="Reloj de pared"
+                  width="15"
+                  height="15"
+                />
+                <p class="form__dia">Sábado</p>
+                <p class="form__hora">9:00 - 15:00</p>
+              </div>
+
+              <div class="form__conjunto">
+                <img
+                  loading="lazy"
+                  src="../assets/reloj-de-pared.png"
+                  alt="Reloj de pared"
+                  width="15"
+                  height="15"
+                />
+                <p class="form__dia">Domingo</p>
+                <p class="form__hora">Cerrado</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__contenedor">
+        <div class="footer__grid">
+          <h3 class="footer__heading">Nuestros Servicios</h3>
+          <div class="footer__head">
+            <a href="#" class="footer__link">Examen Inicial</a>
+            <a href="#" class="footer__link">Cirugía Oral</a>
+            <a href="#" class="footer__link">Endodoncia</a>
+            <a href="#" class="footer__link">Terapéutica Dental</a>
+            <a href="#" class="footer__link">Prótesis Dental</a>
+            <a href="#" class="footer__link">Ortodoncia</a>
+          </div>
+          <h3 class="footer__heading">Soporte</h3>
+          <div class="footer__head">
+            <a href="#" class="footer__link">Preguntas Frecuentes</a>
+            <a href="#" class="footer__link">Ayuda en línea</a>
+            <a href="#" class="footer__link">Confianza y Seguridad</a>
+            <a href="#" class="footer__link">Realizar Cita en Línea</a>
+          </div>
+          <h3 class="footer__heading">Fuentes de Iconos</h3>
+          <div class="footer__head">
+            <a
+              href="https://www.flaticon.es/iconos-gratis/citar"
+              title="citar iconos"
+              class="footer__link"
+              target="_blank"
+              >flaticon.com</a
+            >
+          </div>
+          <p class="footer__derechos">
+            Todos los Derechos Reservados Dental Dentist S.A de C.V &copy;
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../app.js"></script>
+    <script src="../js/cita.js"></script>
+  </body>
 </html>
