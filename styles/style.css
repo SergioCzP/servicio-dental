@@ -572,7 +572,7 @@ img {
 
 .pacientes__foto {
   object-fit: cover;
-  border-radius: 100%;
+  border-radius: 1rem;
   width: 100%;
 }
 
